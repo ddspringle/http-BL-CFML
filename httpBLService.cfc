@@ -223,7 +223,7 @@ component output="false" displayname="httpBLService" hint="I am a CFML interface
 		for( var i = 4; i>=1; i-- ) {
 			// and append this value to the reversed ip array
 			// NOTE: requires ACF11+ or Lucee 4.5+ 
-			// Change to 'revIpArray = arrayAppend( ipArray[ i ] );' on older versions
+			// Change to 'revIpArray = arrayAppend( revIpArray, ipArray[ i ] );' on older versions
 			revIpArray.append( ipArray[ i ] );
 		}
 
