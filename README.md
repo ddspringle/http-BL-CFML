@@ -6,14 +6,14 @@ This repository includes a CFC called httpBLService.cfc that makes use of the Pr
 To use this wrapper, simply initialize it with your 12-alpha character access key provided by Project Honeypot, as follows:
 
     // get the httpBLService
-    httpBLService = createObject( 'component', 'model.services.httpBLService').init( accessKey = '[YOUR_ACCESS_KEY]' [, debug=true] );
+    httpBLService = createObject( 'component', 'httpBLService').init( accessKey = '[ACCESS_KEY]' [, debug=true] );
 
-If you pass the optional argument `debug=true` then any errors that occur during DNS lookup will be rethrown instead of ignored. 
+If you pass the optional argument `debug=true` then any errors that occurs during DNS lookup will be rethrown instead of ignored. 
 
 You then call the service with the IP address you wish to check, as follows:
 
     // get the structure as a variable from the httpBL service    
-	returnStruct = httpBLService.checkIp( ipAddress = [IP_ADDRESS_TO_CHECK] );
+	returnStruct = httpBLService.checkIp( ipAddress = [IP_ADDRESS] );
 
 This returns:
 

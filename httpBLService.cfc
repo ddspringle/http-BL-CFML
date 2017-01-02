@@ -199,7 +199,7 @@ component output="false" displayname="httpBLService" hint="I am a CFML interface
 			// otherwise
 			} else {
 				// we're not, return zero
-				dnsResult = 0;				
+				return 0;				
 			}
 		}
 
