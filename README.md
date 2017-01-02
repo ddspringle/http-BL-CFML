@@ -29,6 +29,8 @@ This returns:
 * Adobe ColdFusion 11+
 * Lucee 4.5+
 
+If you're on an older version/dirrerent engine of ColdFusion, or just prefer to use tags instead of script, then check out the implementation of the http:BL DNS service by Jay Bigam: [http:bl_CFML](http://sidfishes.wordpress.com/2014/07/31/httpbl_cfml-a-project-honeypot-blacklist-implementation-for-coldfusion)
+
 ## Bugs and Feature Requests
 
 If you find any bugs or have a feature you'd like to see implemented in this code, please use the issues area here on GitHub to log them.
