@@ -26,7 +26,7 @@ This returns:
 
 ## Compatibility
 
-* Adobe ColdFusion 11+ (now uses some member functions)
+* Adobe ColdFusion 11+
 * Lucee 4.5+
 
 ## Bugs and Feature Requests
