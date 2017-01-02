@@ -22,7 +22,7 @@ This returns:
     visitorType: this is a numeric representation of what the visitor did to get flagged in the blacklist
     comment: additional details on the visitor type
 
-**NOTE**: You should [read the http:BL API documentation](https://www.projecthoneypot.org/httpbl_api.php) for more information on what these values mean. Some key things to know is that a visitor type of zero (0) indentifies a known search engine (so don't block those if you want to be indexed) and a vistor type of 42 identifies an IP that was *not* found in the blacklist.
+**NOTE**: You should [read the http:BL API documentation](https://www.projecthoneypot.org/httpbl_api.php) for more information on what these values mean. Some key things to know is that a visitor type of zero (0) indentifies a known search engine (so don't block those if you want to be indexed) and a vistor type of 42 (arbitrary - wrapper defined) identifies an IP that was *not* found in the blacklist.
 
 ## Compatibility
 
