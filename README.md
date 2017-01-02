@@ -1,9 +1,9 @@
 # http:BL CFML
-This repository includes a CFC called httpBLService.cfc that makes use of the Project Honeypot http:BL DNS Blacklist - this blacklist maintains the IP addresses of known spammers, email harvesters and other suspicious activities.
+This repository includes a CFC called httpBLService.cfc that makes use of the Project Honey Pot http:BL DNS Blacklist - this blacklist maintains the IP addresses of known spammers, email harvesters and other suspicious activities.
 
 ## Usage
 
-To use this wrapper, simply initialize it with your 12-alpha character access key provided by Project Honeypot, as follows:
+To use this wrapper, simply initialize it with your 12-alpha character access key provided by Project Honey Pot, as follows:
 
     // get the httpBLService
     httpBLService = createObject( 'component', 'httpBLService').init( accessKey = '[ACCESS_KEY]' [, debug=true] );
