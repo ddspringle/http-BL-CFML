@@ -8,14 +8,14 @@ To use this wrapper, simply initialize it with your 12-alpha character access ke
     // get the httpBLService
     httpBLService = createObject( 'component', 'httpBLService').init( accessKey = '[ACCESS_KEY]' [, debug=true] );
 
-If you pass the optional argument `debug=true` then any errors that occurs during DNS lookup will be rethrown instead of ignored. 
+If you pass the optional argument `debug=true` then any error that occurs during DNS lookup will be rethrown instead of ignored. 
 
 You then call the service with the IP address you wish to check, as follows:
 
     // get the structure as a variable from the httpBL service    
 	returnStruct = httpBLService.checkIp( ipAddress = [IP_ADDRESS] );
 
-This returns:
+The checkIp function returns a struct with the following keys:
 
     daysSinceLastActivity: the days since this IP address was last seen hitting a honey pot
     threatScore: the threat posed by this IP address, from 0 - 255 (see the http:BL API docs for more details)
